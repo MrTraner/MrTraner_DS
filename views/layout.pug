@@ -1,8 +1,40 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='shortcut icon', href='/images/favicon.ico')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        title= title
+        link(rel='shortcut icon', href='/images/favicon.ico')
+        link(rel='stylesheet', href='/stylesheets/mrtraner_style.css')
+    body
+        .wrapper
+            //Sidebar
+            nav#sidebar.animated.fadeInLeft
+                a(href='/')
+                    h3.green_brand MrTraner DS
+                a(href="/Principios") Principios
+                p.small.secondary_action Tokens
+                a(href="/Typo") Typo
+                br
+                a(href="/Colors") Colors
+                br
+                a(href="/Spacing") Spacing
+                br
+                a(href="/Animations") Animation
+                br
+                p.small.secondary_action Componentes
+                a(href="/Grid") Grid
+                br
+                a(href="/Navbar") top_navbar
+                br
+                p.small.secondary_action Otras secciones
+                a(href="/Whats_new") News
+                br
+                br
+                br
+                br
+                br
+                br
+                .small.secondary_action.break-word Para cualquier información contácta a 
+                    a.small(href="mailto:juanmauricio.ochoa@gmail.com") juanmauricio.ochoa@gmail.com
+            //Contenido
+            #content.animated.fadeIn
+                block content
