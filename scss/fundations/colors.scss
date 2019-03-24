@@ -1,0 +1,52 @@
+//   ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
+//  ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
+//  ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
+//  ██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
+//  ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
+//   ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+@import "../tokens/colors.scss";
+
+@mixin constructor($color) {
+    color: $color;
+    &_background {
+        background-color: $color;
+    }
+}
+
+//Colores de la marca
+.white_brand {
+    @include constructor($white_brand);
+}
+.green_brand {
+    @include constructor($green_brand);
+}
+
+//Colores de acción
+.primary_action {
+    @include constructor($primary_action);
+}
+.secondary_action {
+    @include constructor($secondary_action);
+}
+
+//Colores booleanos
+.positive {
+    @include constructor($positive);
+}
+.negative {
+    @include constructor($negative);
+}
+
+//Fondos
+.background_blue {
+    background-color: $background_blue;
+}
+
+//Colores básicos
+.white_normal {
+    @include constructor($white_normal);
+}
+.black_normal {
+    @include constructor($black_normal);
+}
