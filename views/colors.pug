@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    h1 Colores
+    p Los colores utilizados en este sistema son:
+    hr
+    p Puedes utilizar cualquiera de estos colores con su clase aplicando el color sobre el texto, sin embargo si deseas utilizarlo sobre un elemento puedes usar 
+        span.bold _background 
+        | adicional a la clase, por ejemplo: 
+        span.bold .green_brand_background
+    .column-12
+        h3 Colores de la marca
+    .column-3
+        .sample-color.small.white_brand_background.border .white_brand
+    .column-3
+        .sample-color.small.green_brand_background .green_brand
+    br
+    .column-12
+        h3 Colores de acción
+    .column-3
+        .sample-color.small.primary_action_background .primary_action
+    .column-3
+        .sample-color.small.secondary_action_background .secondary_action
+    br
+    .column-12
+        h3 Colores booleanos
+    .column-3
+        .sample-color.small.positive_background .positive
+    .column-3
+        .sample-color.small.negative_background .negative
+    br
+    .column-12
+        h3 Fondos
+    .column-3
+        .sample-color.small.background_blue.white_normal .background_blue
+    br
+    .column-12
+        h3 Colores básicos
+    .column-3
+        .sample-color.small.white_normal_background.border .white_normal
+    .column-3
+        .sample-color.small.black_normal_background.white_normal .black_normal

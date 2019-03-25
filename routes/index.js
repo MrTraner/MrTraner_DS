@@ -14,4 +14,8 @@ router.get('/typo', function(req, res, next) {
     res.render('typo', { title: 'Tipografía' });
 });
 
+router.get('/colors', function(req, res, next) {
+    res.render('colors', { title: 'Colores' });
+});
+
 module.exports = router;
