@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+.code {
+  background-color: #1c1d21;
+  color: #98ca3d;
+  padding: 10px;
+  border-radius: 2px;
+  font-family: courier;
+  font-size: 12px; }
+
+hr {
+  opacity: .3; }
+
+.border {
+  border: 1px solid #8f97a2; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+.w-100 {
+  width: 100%; }
+
+.w-50 {
+  width: 50%; }
+
 .white_brand {
   color: #ffffff; }
   .white_brand_background {
@@ -183,6 +210,65 @@ p, a, .normal {
     .space_5_right_margin {
       margin-right: 50px; }
 
+.wrapper, .row {
+  *zoom: 1; }
+  .wrapper:before, .row:before, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after, .row:after {
+    clear: both; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+[class*='column-'] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 30em) {
+  .wrapper {
+    width: 95%;
+    max-width: 65em; }
+  .column-1 {
+    width: 8.33333%; }
+  .column-2 {
+    width: 16.66667%; }
+  .column-3 {
+    width: 25%; }
+  .column-4 {
+    width: 33.33333%; }
+  .column-5 {
+    width: 41.66667%; }
+  .column-6 {
+    width: 50%; }
+  .column-7 {
+    width: 58.33333%; }
+  .column-8 {
+    width: 66.66667%; }
+  .column-9 {
+    width: 75%; }
+  .column-10 {
+    width: 83.33333%; }
+  .column-11 {
+    width: 91.66667%; }
+  .column-12 {
+    width: 100%; } }
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
 .wrapper {
   display: flex;
@@ -192,7 +278,7 @@ p, a, .normal {
   display: flex; }
 
 #sidebar {
-  width: 180px;
+  width: 200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -208,7 +294,7 @@ p, a, .normal {
     color: #8f97a2; }
 
 #content {
-  margin-left: 180px;
+  margin-left: 200px;
   width: inherit;
   max-width: 990px;
   padding: 30px; }
