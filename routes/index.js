@@ -10,4 +10,8 @@ router.get('/principios', function(req, res, next) {
     res.render('principios', { title: 'Principios' });
 });
 
+router.get('/typo', function(req, res, next) {
+    res.render('typo', { title: 'Tipografía' });
+});
+
 module.exports = router;
