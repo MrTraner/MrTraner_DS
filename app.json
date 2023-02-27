@@ -14,5 +14,5 @@
   "name": "MrTraner_DS",
   "scripts": {
   },
-  "stack": "heroku-18"
+  "stack": "heroku-22"
 }
